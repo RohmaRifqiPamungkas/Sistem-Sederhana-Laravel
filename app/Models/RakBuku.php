@@ -12,6 +12,6 @@ class RakBuku extends Model
     protected $table = 'rak_buku';
     public function buku(): HasMany
     {
-        return $this->hasMany(RakBuku::class, 'id_rak_buku', 'id');
+        return $this->hasMany(Buku::class, 'id_rak_buku', 'id');
     }
 }

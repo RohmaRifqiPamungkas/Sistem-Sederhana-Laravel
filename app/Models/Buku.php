@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Buku extends Model
 {
     protected $table = 'buku';
+
     public function rakBuku(): BelongsTo
     {
         return $this->belongsTo(RakBuku::class, 'id_rak_buku');
